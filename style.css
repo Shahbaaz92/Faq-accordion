@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: left;
+  background: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+}
+main {
+  width: 70%;
+  height: auto;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 10px;
+}
+.illustration {
+  position: relative;
+  background: url(images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: 100% 60%;
+}
+.box {
+  position: absolute;
+  left: -90px;
+  top: 195px;
+}
+.overflow {
+  overflow: hidden;
+  height: 100%;
+}
+.not-box {
+  margin-left: -65px;
+  margin-bottom: -400px;
+  /* width: 100%; */
+}
+.text-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  padding: 40px 20px;
+  gap: 10px;
+}
+h1 {
+  align-self: flex-start;
+  padding: 10px 30px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e1f36;
+}
+
+.text-box {
+  width: 350px;
+  box-shadow: 5px 5px 3px 1px #0000002c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 5px 10px;
+}
+.quiz {
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  color: #4b4c5f;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bold {
+  font-weight: 700;
+  color: #1e1f36;
+}
+i {
+  color: #f47b56;
+}
+.quiz:hover {
+  color: #f47b56;
+}
+.answer {
+  font-size: 12px;
+  line-height: 18px;
+  color: #787887;
+}
+.hidden {
+  visibility: hidden;
+
+  height: 0;
+}
+.unhide {
+  visibility: visible;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(122, 100%, 50%);
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    height: auto;
+  }
+  main {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    position: relative;
+    margin-top: 100px;
+    /* gap: 50px; */
+    /* height: 1000px; */
+  }
+  .illustration {
+    top: -365px;
+    right: -150px;
+
+    /* background-position: 100% 60%; */
+  }
+  .box {
+    width: 20%;
+    margin: 0;
+    margin-left: 18px;
+    margin-top: 140px;
+  }
+  .not-box {
+    width: 50%;
+  }
+  h1 {
+    margin-top: 70px;
+  }
+
+  .overflow {
+    overflow: visible;
+  }
+  .text-container {
+    background: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -20px;
+  }
+  .text-box {
+    width: 279px;
+  }
+  .quiz {
+    font-size: 13px;
+  }
+  .answer {
+    font-size: 12px;
+  }
+}
